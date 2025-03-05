@@ -1,0 +1,49 @@
+.card{
+    max-height: 100vh !important;
+    height: auto !important;
+    max-width: fit-content;
+    overflow-y: visible !important;
+}
+
+.card h1 {
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    margin: -4px 52px 0 0;
+    display: inline-block !important;
+    max-width: calc(100% - 56px) !important;
+    font-size:1.125rem !important;
+}
+
+.newInspection h1{
+    width: 310px !important;
+    height:fit-content !important;
+}
+
+.closeButton{
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: var(--grey200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    top:16px;
+    right: 16px;
+    border:none;
+}
+
+.closeButton:hover{
+    background-color: var(--destructive200);
+}
+
+.cardContent{
+    height: calc(100% - 80px) !important;
+    overflow-y: visible !important;
+}
+
+@media (max-width: 468px) {
+
+
+}

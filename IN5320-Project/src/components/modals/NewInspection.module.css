@@ -1,0 +1,156 @@
+.inspectionForm{
+    margin-top:12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:368px;
+}
+
+.buttons{
+    display:flex;
+    gap:36px;
+    margin-bottom:-2px;
+    width: 360px;
+    padding: 2px;
+}
+
+.buttons button{
+    width:100%;
+}
+
+.buttons span svg{
+   width: 20px;
+    height: 20px;
+}
+
+.labels{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.label{
+    height:28px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.inputs{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:4px;
+}
+
+.other{
+    margin-bottom:-8px !important;
+}
+
+.fields{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.checkbox{
+    height: 28px;
+}
+
+.fields h3{
+    margin-top: 0;
+    margin-bottom: -4px;
+    font-weight:400;
+}
+
+.dateField{
+   display: flex;
+    gap: 8px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dateField label{
+    font-size: 1.125rem !important;
+}
+
+.emptyDiv{
+    height:22px;
+
+}
+
+.buttons div{
+    width:100%;
+}
+
+.statusField{
+    display:flex;
+    gap:8px;
+    width:100%;
+    font-size: 1.125rem !important;
+    height:fit-content;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+@media (max-width: 468px) {
+    .emptyDiv{
+        display: none;
+    }
+
+    .inspectionForm{
+        width:100%;
+    }
+
+    .buttons{
+        width:100%;
+    }
+
+    .buttons button{
+        width:100%;
+    }
+
+    .fields{
+        width:100%;
+    }
+
+    .dateField{
+        width:100%;
+    }
+
+    .label span{
+        font-size: 0.84rem !important;
+    }
+
+    .inspectionForm h3{
+        display: none;
+    }
+
+    .label{
+        height:24px;
+    }
+
+    .checkbox{
+        font-size: 0.84rem !important;
+        height: 24px;
+    }
+
+    .fields{
+        gap:16px;
+    }
+
+    .inputs{
+        gap:14px;
+        margin-top:3px;
+    }
+
+    .labels{
+        margin-left:-6px;
+    }
+}

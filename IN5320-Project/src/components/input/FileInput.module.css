@@ -1,0 +1,187 @@
+.fileInput {
+    position: relative;
+    width:100%;
+    display: flex;
+    height: 150px;
+    box-sizing: border-box;
+    margin-top:2px;
+}
+
+.inputField{
+    width:100%;
+    display: flex;
+}
+
+.inputField div{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputField label{
+    align-self: start;
+}
+
+
+.fileInput button {
+    position: static;
+    height: 50px;
+    color: #FFFFFF;
+    width: 50px;
+    margin-top:20px;
+    margin-bottom:75px;
+    background-color: var(--primary700);
+    border-radius: 100px !important;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+}
+
+.fileInput button:hover {
+    background-color: var(--primary800);
+}
+
+.fileInput button:active {
+    background-color: var(--primary600);
+}
+
+.fileInput button:focus {
+    background-color: var(--primary600);
+    outline: none;
+}
+
+.fileInput button:disabled {
+    background-color: var(--grey500);
+}
+
+.dropZone {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin-top:-32px;
+    width:100%;
+    height: 150px;
+    background-color: rgba(168, 207, 228, 0.10);
+    border: 2px dotted var(--primary700);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #171616;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.dropZone.dragOver {
+    background-color: rgba(168, 207, 228, 0.5) !important;
+    transition: background-color 0.1s ease;
+}
+
+.dropZone p{
+    margin-bottom:-80px;
+}
+
+.fileInput button span {
+    z-index: 10;
+    margin-left:6px;
+}
+
+.fileInput svg {
+    margin-bottom: 2px;
+    color: #FFFFFF !important;
+}
+
+.fileInput p {
+    margin-top: -45px;
+    text-align: center;
+}
+
+.fileListItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: fit-content;
+    justify-self: center;
+    z-index: 20;
+}
+
+.fileListItem svg {
+    color: #164863 !important;
+    margin-right:-4px;
+    margin-left: -8px;
+}
+
+.fileListItem span span .label{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+
+.fileListItem span {
+    display: flex;
+    margin:0;
+    height:20px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeSvg{
+    cursor: pointer;
+    margin-top:2px;
+    z-index: 40;
+    color: #164863;
+}
+
+.removeSvg:hover{
+    color: #c31c1c !important;
+    background-color: #a7d5ef;
+    border-radius:100px;
+}
+
+.inputField button p{
+    position: absolute;
+    top:128px;
+    width:100%;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--grey900);
+}
+
+@media(max-width: 468px){
+    .fileInput {
+        height: 100px;
+    }
+
+    .fileInput button {
+        height: 40px;
+        width: 40px;
+        margin-top:10px;
+        margin-bottom:50px;
+    }
+
+    .dropZone {
+        height: 100px;
+    }
+
+    .fileInput p {
+        margin-top: -35px;
+    }
+
+    .fileListItem{
+        display: none !important;
+    }
+
+    .inputField button p{
+        top: 94px;
+        display: block !important;
+    }
+
+    .inputField div p{
+        display:none;
+    }
+}

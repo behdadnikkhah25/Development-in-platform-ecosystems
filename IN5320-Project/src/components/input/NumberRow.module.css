@@ -1,0 +1,47 @@
+.numberContainer{
+    display: flex;
+    position: relative;
+    background-color: var(--primary200);
+    max-width: fit-content;
+    border-radius:5px;
+}
+
+.box {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.selectedBox {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: left 0.3s ease;
+    border-radius: 3px;
+    border: 1px solid var(--primary500);
+}
+
+@media (max-width: 468px) {
+    .box {
+        width: 24px;
+        height: 24px;
+        line-height: 32px;
+        font-size: 1rem;
+    }
+    .selectedBox {
+        width: 24px;
+        height: 24px;
+        border-radius: 3px;
+    }
+}

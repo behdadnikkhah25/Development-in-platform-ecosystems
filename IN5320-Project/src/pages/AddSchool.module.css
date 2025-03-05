@@ -1,0 +1,166 @@
+.buttons{
+    border-top: 1px solid var(--grey400);
+    padding-top: 20px;
+    display: flex;
+    gap: 40px;
+    width:100%;
+    padding-bottom:20px;
+}
+
+.buttons button{
+    width:100%;
+}
+
+.field{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    border-top: 1px solid var(--grey400);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: fit-content;
+}
+
+.label{
+    width: 100%;
+    max-height: fit-content;
+}
+
+.inputSection{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+}
+
+.labelDescription{
+    margin-top:-12px;
+    color: var(--grey600);
+    font-size: 1rem !important;
+    word-break: keep-all;
+    width: 200px;
+}
+
+.labelDescriptionLink{
+    margin-top:-12px;
+    color: var(--grey600);
+    font-size: 1rem !important;
+    word-break: keep-all;
+    width: 200px;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.labelDescriptionLink:hover{
+    color: var(--primary800);
+}
+
+.inputField, .mailField{
+    width:100%;
+}
+
+.locationInput input{
+    border: none !important;
+
+    border-color: white;
+    box-shadow: none;
+}
+
+.locationInput{
+    display: flex;
+    gap: 8px;
+    margin-top:8px;
+}
+
+
+.coordinate{
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid var(--grey400);
+    border-radius: 4px;
+    box-shadow: inset 0 0 1px 0 rgba(48, 54, 60, 0.1);
+    padding: 0;
+    color: var(--grey700);
+    width: 100%;
+}
+
+.coordinatePrefix{
+    border-right:1px solid var(--grey400);
+    margin: 0 0 0 -12px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right:8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey700);
+}
+
+.mapSection{
+    padding-bottom: 4px;
+    padding-top:4px;
+    width: 100%;
+}
+
+.mapInput{
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--grey400);
+    border-radius: 4px;
+}
+
+@media(max-width: 468px){
+    .mapSection{
+        width:100%;
+    }
+
+    .mapInput{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .buttons{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .field{
+        flex-direction: column;
+        gap:0;
+        margin-top: 12px;
+        margin-bottom: -8px;
+    }
+
+    .labelDescription{
+        width: 100%;
+    }
+
+    .labelDescription .line2{
+        margin-top:-8px;
+    }
+
+    .locationInput{
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+
+    .buttons button{
+        width:100%;
+    }
+
+    .inputSection{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .label{
+        width: 100%;
+    }
+
+    .labelDescription{
+        width: 100%;
+    }
+}

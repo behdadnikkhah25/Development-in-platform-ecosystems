@@ -1,0 +1,186 @@
+.header{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 140px;
+    width:100%;
+    justify-content: space-between;
+    margin-top: -60px;
+    margin-bottom:8px;
+}
+
+.avatar{
+    width: 140px !important;
+    height: 140px !important;
+    border-radius: 50%;
+    background-color: #E3E3E3;
+    margin-left:40px;
+    font-size: 2rem;
+}
+
+.icon{
+    display: flex;
+}
+
+.icon button{
+    margin-left: -28px;
+    margin-top:auto;
+    margin-bottom:4px;
+    border-radius: 100% !important;
+    width:40px;
+    height:40px;
+}
+
+.profileBackground{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    background-image: radial-gradient(
+            farthest-corner at 80px 140px,
+            var(--primary300) 0%,
+            var(--primary700) 100%
+    );
+    height: 160px;
+}
+
+.buttons{
+    display: flex;
+    gap: 12px;
+    margin-top:60px;
+}
+
+.field{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    border-top: 1px solid var(--grey400);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: fit-content;
+}
+
+.label{
+    width: 100%;
+    max-height: fit-content;
+}
+
+.inputSection{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+}
+
+.labelDescription{
+    margin-top:-12px;
+    color: var(--grey600);
+    font-size: 1rem !important;
+    word-break: keep-all;
+    width: 200px;
+}
+
+.username{
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid var(--grey400);
+    border-radius: 4px;
+    box-shadow: inset 0 0 1px 0 rgba(48, 54, 60, 0.1);
+    padding: 11px 12px;
+    background-color: var(--grey200);
+    color: var(--grey700);
+    width: 100%;
+}
+
+.usernamePrefix{
+    border-right:1px solid var(--grey400);
+    margin: -11px 12px -11px -12px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey700);
+    font-weight: 500;
+}
+
+.copyUsername{
+    color: var(--grey700);
+    cursor: pointer;
+    width:36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -11px -10px -11px auto;
+}
+
+.copyUsername span:hover{
+    background-color: var(--grey400);
+}
+
+.copyUsername span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.copyUsername svg{
+    width: 20px;
+    height: 20px;
+}
+
+.inputField, .mailField{
+    width:100%;
+}
+
+@media(max-width: 468px){
+    .field{
+        flex-direction: column;
+        gap:0;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .labelDescription{
+        width: 100%;
+    }
+
+    .label{
+        width: 100%;
+    }
+
+    .inputSection{
+        width: 100%;
+    }
+
+    .username{
+        width: 100%;
+    }
+
+    .copyUsername span{
+        width: 100%;
+    }
+
+    .copyUsername svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .inputField, .mailField{
+        width: 100%;
+    }
+
+    .labelDescription{
+        width: 100%;
+    }
+
+    .buttons{
+        margin-top:64px;
+        margin-right:2px;
+        flex-direction: column;
+    }
+
+    .avatar{
+        margin-left: 12px;
+    }
+}

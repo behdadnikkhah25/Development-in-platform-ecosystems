@@ -1,0 +1,26 @@
+.leaflet-bar a{
+    background-color: var(--primary500);
+    color: #FFFFFF;
+}
+
+.leaflet-bar a:hover{
+    background-color: var(--primary700);
+}
+
+.leaflet-bar{
+    border: 2px solid rgba(155, 190, 200, 0.53) !important;
+    border-radius: 6px !important;
+}
+
+.leaflet-control-zoom-in{
+    border-bottom: 1px solid #9BBEC8 !important;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.leaflet-control-zoom-out{
+    border-radius: 0 0 4px 4px !important;
+}
+
+.leaflet-control-attribution{
+    border-radius: 5px 0 0 0;
+}

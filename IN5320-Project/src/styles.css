@@ -1,0 +1,590 @@
+:root {
+    font-size: 1rem;
+
+    --grey50: #FBFCFD;
+    --grey100: #F8F9FA;
+    --grey200: #F3F5F7;
+    --grey300: #E8EDF2;
+    --grey400: #D5DDE5;
+    --grey500: #A0ADBA;
+    --grey600: #6C7787;
+    --grey700: #4A5768;
+    --grey800: #404B5A;
+    --grey900: #212934;
+
+    --primary50: #f3f9ff;
+    --primary100: #dfeeff;
+    --primary200: #bacce9;
+    --primary300: #8fb4e0;
+    --primary400: #5f91d5;
+    --primary500: #4877bb;
+    --primary600: #3b629c;
+    --primary700: #435f99;
+    --primary800: #344a79;
+    --primary900: #2a3f5e;
+
+    --destructive50: #fff5f6;
+    --destructive100: #ffe5e8;
+    --destructive200: #ffcdd2;
+    --destructive300: #e57373;
+    --destructive400: #f44336;
+    --destructive500: #d32f2f;
+    --destructive600: #c62828;
+    --destructive700: #b71c1c;
+    --destructive800: #891515;
+    --destructive900: #330202;
+    --white: #ffffff;
+
+    --border-radius: 4px;
+
+    --elevations-e100: 0px 1px 2px rgba(33,41,52,0.06), 0px 1px 3px rgba(33,41,52,0.1);
+    --elevations-e200: 0px 0px 1px rgba(33,41,52,0.1), 0px 4px 6px -1px rgba(33,41,52,0.1), 0px 2px 4px -1px rgba(33,41,52,0.06);
+    --elevations-e300: 0px 10px 15px -3px rgba(33,41,52,0.1), 0px 4px 6px -2px rgba(33,41,52,0.05);
+    --elevations-e400: 0px 25px 50px -12px rgba(33, 41, 52, 0.25);
+}
+p{
+    font-size: 1rem;
+}
+
+.app{
+    height: 100%;
+    display: flex;
+}
+
+button{
+    font-size: 1rem !important;
+}
+
+.splitDropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.splitButton button{
+    border: 1px solid var(--grey400) !important;
+    border-color: var(--grey400) !important;
+}
+
+.primary {
+    border-color:var(--primary800) !important;;
+    background: var(--primary700) none !important;
+}
+
+.primary .secondary {
+    background:transparent !important;
+}
+
+.primary:hover {
+    border-color:var(--primary800) !important;;
+    background:var(--primary800) none !important;
+}
+
+.primary:active,
+.primary:active:focus {
+    background: var(--primary900) none !important;
+}
+
+.destructive{
+    background:var(--destructive700) none !important;
+}
+
+.destructive.secondary{
+    background: transparent !important;
+    border-color:var(--destructive700) !important;
+}
+
+.destructive.secondary:hover {
+    background: var(--destructive50) none !important;
+}
+
+.destructive.secondary:active,
+.destructive.secondary:active:focus {
+    background: var(--destructive100) none !important;
+    border-color: var(--destructive700) !important;
+}
+
+.destructive:hover{
+    background:var(--destructive800) none !important;
+}
+
+.destructive:active,
+.destructive:active:focus {
+    background:var(--destructive900) none !important;
+}
+
+svg.checked .background{
+    fill: var(--primary500) !important;
+    border: 1px solid var(--primary600) !important;
+}
+
+input[type="checkbox"] {
+    width: 20px !important;
+    height: 22px !important;
+}
+
+
+
+label{
+    font-size: 1rem !important;
+    line-height: 21px !important;
+}
+
+input{
+    font-size: 1rem !important;
+    border-radius: var(--border-radius) !important;
+}
+
+h1{
+    font-size: 1.5rem;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top:20px;
+}
+
+h2{
+    font-size: 1.25rem;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1.125rem;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.content{
+    font-size: 1rem;
+    line-height: 20px;
+    height:20px;
+    gap:4px;
+}
+
+.top, .container{
+    width: auto;
+}
+
+table{
+    border-radius: 7px 7px 0 0;
+}
+
+.tableContainer{
+    border-radius:7px;
+}
+
+table thead th{
+    background-color:var(--grey200) !important;
+    height: 44px;
+    width: fit-content !important;
+}
+
+table thead th span{
+    margin-top:auto;
+    margin-bottom:auto;
+    font-weight:500;
+    white-space: nowrap;
+}
+
+.bottom{
+    justify-content: right;
+    border-radius: 0 0 7px 7px;
+}
+
+.root-input{
+    overflow-y:visible !important;
+}
+
+.tableContainer{
+    width: 100%;
+    max-width: 800px;
+    box-shadow: var(--elevations-e200);
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+.tableContainer td{
+    font-size: 1rem !important;
+}
+
+.inspectionTable{
+    margin-top:12px;
+    width: 100%;
+}
+
+.numberHeader{
+    justify-content: center;
+}
+
+.inspectionTable td{
+    font-size: 1rem !important;
+    text-align:center !important;
+}
+
+.recentSearch ul{
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 20px;
+    padding-inline-start: 0;
+    width: fit-content;
+}
+
+.recentSearch li{
+    text-decoration: underline;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.recentSearch{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+
+.recentSearch p{
+    margin-bottom:0;
+    font-weight: 500;
+}
+
+.searchBar{
+    display: flex;
+    border: 1px solid var(--grey400);
+    border-radius: var(--border-radius);;
+    box-shadow: var(--elevations-e200);
+}
+
+.searchIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    color: var(--grey700);
+}
+
+.searchField input{
+    border:none;
+    box-shadow: none;
+}
+
+.searchField{
+    width:100%;
+}
+
+li, ul{
+    font-size: 1rem !important;
+}
+
+.iconInTable{
+    width: 24px;
+    height: 24px;
+    margin:0 auto;
+}
+
+
+.navigation {
+    position: fixed;
+    width: 200px;
+    min-height: 110vh;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+.tableLabel {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.application {
+    margin: 0 0 10px 240px;
+    overflow-y: auto;
+    justify-content: flex-start;
+    width: 100%;
+    height:100%;
+}
+
+.loading, .error{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+    width:100%;
+    flex-direction: column;
+}
+
+.tableStatus{
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navitem a span .icon{
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.add-school-icon{
+    position:relative;
+    display: inline-block;
+    width:26px;
+    height:26px;
+}
+
+.add-school-icon-main{
+    width:26px;
+    height:26px;
+}
+
+.add-school-icon-plus{
+    position:absolute;
+    top:14px;
+    left:16px;
+    width:12px;
+    height:12px;
+}
+
+.pageContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom:0;
+    padding-left:12px;
+    padding-right:12px;
+    margin: auto;
+}
+
+.currentImage{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.currentImageContainer{
+    width:100%;
+    height:150px;
+    border: 1px solid var(--grey400);
+    border-radius: 7px;
+    position: relative;
+    margin-top:2px;
+}
+
+.currentImageContainer button{
+    position: absolute;
+    top: -4px;
+    right:-4px;
+    border-radius: 100% !important;
+    width:36px;
+    height:36px;
+}
+
+.mapContainer {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.iconCell{
+    text-align: center;
+    horiz-align: center;
+    cursor:pointer;
+}
+
+.iconCell div{
+    text-align: center;
+}
+
+.confirmModalButtons{
+    display: flex;
+    gap:20px;
+    justify-self: right;
+    margin-top:12px;
+}
+
+.dashboardTableLabel{
+    margin-top: 20px;
+    width:100%;
+}
+
+.dashboardTableLabel svg{
+    margin-bottom: -4px;
+}
+
+.tableUnderText{
+    margin-top:-4px;
+}
+
+.tableUnderText span{
+    font-weight: 500;
+    color: var(--primary700);
+}
+
+.tableUnderText span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pageContainer h2{
+    margin-bottom: 4px;
+}
+
+.iconCell div{
+    color: var(--grey600);
+}
+
+.iconCell div:hover{
+    color: var(--primary800);
+}
+
+@media(max-width:1400px){
+    .tableHeadText{
+        display: none !important;
+    }
+}
+
+@media(max-width: 925px){
+    .screen-field{
+        display: none !important;
+    }
+}
+
+@media (max-width: 468px) {
+
+    .mapContainer {
+        height: 140px;
+    }
+
+    .screen-field{
+        display: none !important;
+    }
+
+    .navigation {
+        width: 100vw;
+        min-height: 52px;
+        padding-bottom:10px;
+        padding-top: 10px;
+        justify-content: center;
+        box-shadow: 0 -8px 6px -2px rgba(57, 57, 57, 0.33);
+
+    }
+
+    .application {
+        margin: 0 auto 96px;
+        overflow-y: auto;
+        justify-content: flex-start;
+        width: 100%;
+        height:100%;
+    }
+
+    .navmenu{
+        display:flex !important;
+        justify-content: space-around;
+        height: 52px;
+    }
+
+    .navitem a .label{
+        display: none !important;
+    }
+
+    .navitem a span .icon{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .navitem .add-school-icon{
+        width:40px;
+        height:40px;
+        margin: -4px auto auto;
+    }
+
+    .navitem .add-school-icon-main{
+        width:48px !important;
+        height:48px !important;
+    }
+
+    .navitem .add-school-icon-plus{
+        position:absolute;
+        top:26px;
+        left: 31px !important;
+        width:20px !important;
+        height:20px !important;
+    }
+
+    .navitem a span{
+        width: 40px !important;
+        height: 40px !important;
+        margin-inline-end: 0 !important;
+    }
+
+    .navitem svg{
+        width: 40px !important;
+        height: 40px !important;
+        margin-right:-8px;
+    }
+
+    .navitem{
+        width:80px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .pageContainer{
+        margin:auto;
+    }
+
+    .tableContainer{
+        width: 100%;
+        max-width: 100%;
+        box-shadow: var(--elevations-e200);
+        margin-top:12px;
+        margin-bottom:20px;
+    }
+
+    .tableContainer table{
+        width:100%;
+    }
+
+    .tableLabel{
+        flex-direction: column;
+        gap:8px;
+    }
+
+    .tableLabel label{
+        width:100%;
+    }
+
+    .tableLabel button{
+        width:100%;
+    }
+
+    .top, .container{
+        max-width: 100% !important;
+    }
+    table thead th {
+        width: auto !important;
+    }
+
+    table thead{
+        gap:0 !important;
+    }
+
+    .DataTableColumnHeader{
+        padding: 4px 8px !important;
+    }
+
+    .DataTableColumnHeader svg{
+        margin-top:-4px;
+    }
+}
